@@ -1,0 +1,177 @@
+body {
+    background-color: blanchedalmond;
+    margin: auto;
+    font-family: 'Kiwi Maru', serif;
+    /*font-family: 'Dancing Script', cursive;*/
+}
+
+article{
+    display:flex;
+    flex-direction:column;
+    /*height:300vh;*/
+    height:100vh;
+}
+
+header{
+    background-color: lightskyblue;
+    /*height: 170px;*/
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: lightskyblue;
+    height: 60px;
+}
+
+section {
+    flex-grow:1;
+    background-color: gray;
+    margin: 10px;
+}
+
+.logo ,.arama, .yazi{
+    display: inline-block;
+}
+
+form{
+    margin-left: 50px;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+div {
+    margin: 20px auto;
+}
+
+div.baslik {
+    font-size: larger;
+    font-weight: bold;
+}
+
+p.kutu {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.konteyner {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    background-color: green;
+}
+
+div.kolon {
+    background-color: tomato;
+    width: 45%;
+    margin: 10px 0 0;
+    
+}
+
+
+nav{
+    min-height:6vh;
+    /*width:208vh;*/
+    width:100%; /*bu sayede navbar ın genişliği hep sayfanın boyutu kadar yani kaplıyor.*/
+    /*background-color: #5d4954;*/
+    background-color: royalblue;
+    position:fixed;/*sbt durur*/
+}
+
+.nav_links2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_links2 li{
+    list-style: none; /*li lerin önünde liste kullanırkan olan yuvarlağı siliyoruz.*/
+}
+
+.nav_links2 a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.section_div1,.section_div3{
+    height: 570px;
+    width: 50%;
+    border: 10px solid green;
+}
+
+.section_div2{
+    flex-grow: 1;
+}
+
+.section_div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+    article {
+    background-color: red;
+    }
+}
+
+#computer_img{
+    display:block;
+}
+
+#Button, #time_button{
+    background-color: #38A3B5;
+    border-radius: 3px;
+    border: 0;
+    color: black;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0,0, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+#time_button{
+    margin: 50px auto;
+}
+#demo{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 90px auto;
+}
+
+#Button:hover{
+    background-color:violet;
+    color:white;
+    border-radius:10px;
+}
+#time_button:hover{
+    background-color:violet;
+    color:white;
+    border-radius:10px;
+}
